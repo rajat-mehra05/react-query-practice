@@ -8,8 +8,6 @@ const CharacterComp = () => {
 
   const { data, status } = useQuery("characters", fetchCharacters);
 
-  console.log(data.results);
-
   if (status === "loading") {
     return <p>Loading...</p>;
   }
