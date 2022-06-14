@@ -1,14 +1,18 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import "./App.css";
-import CharacterComp from "./components/CharacterComp";
+import Characters from "./components/Characters";
+import Hero from "./components/Hero";
 
 function App() {
   const queryClient = new QueryClient();
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <CharacterComp />
-    </QueryClientProvider>
+    <div className="bg-gray-900">
+      <QueryClientProvider client={queryClient}>
+        <Hero />
+        <Characters />
+      </QueryClientProvider>
+    </div>
   );
 }
 
