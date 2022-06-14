@@ -6,6 +6,7 @@ const Character = ({ character }) => {
           src={character.image}
           alt="characterPic"
           className="w-60 h-60 rounded-l-lg"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col space-y-8 justify-center">
